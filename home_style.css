@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*::selection{
+	background-color: rgb(255, 255, 255);
+}
+body{
+	background: rgb(0,0,33);
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+	background-color: rgb(20, 8, 75);
+	padding: 20px 0px 20px 20px;
+	height: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.h1{
+	font-size: 0.8rem;
+	height: max-content;
+	cursor: pointer;
+}
+.h1:hover{
+	font-size: small;
+	font-weight: 900;
+}
+.nav ul{
+	display: flex;
+	align-items: center;
+}
+.nav ul a{
+	text-decoration: none;
+	color: white;
+	list-style: none;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.nav ul a:hover{
+	color: blueviolet;
+	font-size:large;
+}
+.section{
+	display: flex;
+}
+span{
+	color: blueviolet;
+}
+.section .left{
+	font-size: 2rem;
+	width: 30%;
+	margin: auto;
+}
+.section .right{
+	height: 20%;
+	margin: 90px auto;
+}
+footer{
+	background-color: rgb(20, 8, 75);
+	font-size: 1.5vh;
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	text-align: center;
+	padding:10px 0px;
+}
+/* media tag by width */
+@media(max-width:950px){
+	.section .right .image1{
+		height: 35vh;
+	}
+	.section .left{
+		margin-top: 80px;
+		width: 400px;
+		font-size: 50px;
+		text-align: center;
+	}
+	.section{
+		flex-direction: column;
+	}
+}
+@media(max-width:850px){
+	.section .right .image1{
+		height: 35vh;
+	}
+	.section .left{
+		margin-top: 80px;
+		font-size: 40px;
+	}
+}
+@media(max-width:550px){
+	.section .right .image1{
+		height: 20vh;
+	}
+	h1{
+		font-size:12px;
+		padding-top: 7px;
+	} 
+	.nav ul a{
+		font-size: 10px;
+		margin-right: 10px;
+	}
+	.nav{
+		padding: 0px;
+	}
+	.nav ul a:hover{
+		color: blueviolet;
+		font-size: 7px;
+	}
+	.section .left{
+		margin-top: 100px;
+		width: 250px;
+		font-size: 18px;
+	}
+	.section .right .image1{
+		height: 40vh;
+	}
+}
+@media(max-width:300px){
+	.section .right .image1{
+		height: 20vh;
+	}
+	h1{
+		font-size:8px;
+		padding-top: 0px;
+	}
+	.nav{
+		height: 10px;
+		padding: 5px 0px;
+	}
+	.nav ul a{
+		font-size: 7px;
+		margin-right: 10px;
+	}
+	.section .left{
+		width: 200px;
+		font-size: 15px;
+	}
+}
+/* media tag by height */
+@media(max-height:550px){
+	.nav{
+		padding: 0px;
+	}
+	.section .left{
+		margin-top: 50px;
+	}
+	.section .right .image1{
+		height: 45vh;
+	}
+	footer{
+		bottom: -250px;
+	}
+}
+@media(max-height:300px){
+	footer{
+		bottom: -300px;
+	}
+}

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0,0,33);
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+h2{
+    margin: 5px;
+}
+.red{
+    display: flex;
+    margin: 5px 2%;
+}
+.Image1{
+    width: 94%;
+    margin: 10px 3%;
+    text-align: center;
+    
+}
+.Image11{
+    width: 48%;
+    margin: 5px;
+    
+}
+.Image12{
+    width: 48%;
+    margin: 5px;
+}
+.Image2{
+    width: 48%;
+    margin: 5px;
+}
+.Image21{
+    width: 48%;
+    margin: 5px;
+}
+.Image22{
+    height: 60%;
+}
+.Image3{
+    width: 40%;
+}
+@media (max-width:750px) {
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
