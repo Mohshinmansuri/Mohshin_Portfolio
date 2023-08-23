@@ -7,39 +7,51 @@
     <link rel="stylesheet" href="conatact_style.css">
 </head>
 <body>
-    <div class="Contact">
-        <form action="action.php">
-        <h2>Contact me</h2>
-        <br><br>
-        <span>Name</span>
-        <input type="text" name="Name" class="Username" placeholder="Enter Your Name">
-        <br><br>
-        <span>Email</span>
-        <input type="email" name="Email" placeholder="Enter Your Email Address here">
-        <br><br>
-        <span id="Message">Message</span>
-        <input type="text" id="message" placeholder="message">
-        <br><br>
-        <input type="submit" value="Submit" id="Submit">
-    </form>
-    <br><hr><br>
-    <h4>You Can Contact me By Clicking on below links.</h4>
-    <br>
-    <div class="Contact_link">
-    <div class="Contact_links">
-        <a href="https://www.facebook.com/MohshinMansuri123/" target="main"> Facebook</a>
-        <a href="https://www.instagram.com/mohshin_mansuri/" target="main">Instagram</a>
-        <a href="https://www.youtube.com/@mohshin123" target="main">Youtube</a>
-        <a href="https://twitter.com/_Mohshin123" target="main">Twitter</a>
+    <!-- FORM STARTS -->
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/MohshinMansuri123"><img src="Image/fb.png"></a>
+                <a href="https://twitter.com/_Mohshin123"><img src="Image/tw.png"></a>
+                <a href="mailto:mohshinmansuri123@gmail.com"><img src="Image/gp.png"></a>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="text" class="input-field" placeholder="Password">
+                <input type="checkbox" class="check-box"><span>I am agree to the terms & Conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
     </div>
-    <br />
-    <div class="Contact_links">
-        <a href="mailto:mohshinmansuri123@gmail.com" target="_main">Email</a>
-        <a href="#" target="_main">Linked In</a>
-        <a href="#" target="_main">Blog</a>
-        <a href="https://mohshinmansuri.github.io/Mohshin_Portfolio/home.html" target="_main">Website</a>
-    </div>
-</div>
-</div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login(){
+            x.style.left = "50px"
+            y.style.left = "-400px"
+            z.style.left = "0px"
+        }
+    </script>
+    <!-- FORM ENDS -->
+    
 </body>
 </html>
